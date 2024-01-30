@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { VeltProvider, VeltComments, VeltPresence } from '@veltdev/react';
+import YourAuthComponent from './YourAuthComponent';
+import YourDocument from './YourDocument';
+import "./App.css";
 
-function App() {
+
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VeltProvider apiKey="j3AwoBkuQMTEgeqrmPve">
+      <VeltComments/>
+      <VeltPresence/>
+      <YourAuthComponent/>
+      <YourDocument/>
+    </VeltProvider>
   );
 }
-
-export default App;
