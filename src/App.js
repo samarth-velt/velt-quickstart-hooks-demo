@@ -9,7 +9,6 @@ export default function App() {
   return (
     <VeltProvider apiKey="j3AwoBkuQMTEgeqrmPve">
       <VeltComments/>
-      <VeltPresence/>
       <YourAuthComponent/>
       <YourDocument/>
     </VeltProvider>
