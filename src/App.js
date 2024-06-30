@@ -10,7 +10,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <VeltProvider apiKey="eVAEQFPaKsqUie40OhtK">
+    <VeltProvider apiKey="7M3NC9F9k48eU01hxXT9">
       <VeltCommentsSidebar pageMode={true} />
       <VeltComments />
       <YourAuthComponent />
