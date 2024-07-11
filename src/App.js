@@ -10,7 +10,18 @@ import "./App.css";
 
 export default function App() {
   return (
-    <VeltProvider apiKey="7M3NC9F9k48eU01hxXT9">
+    <VeltProvider
+      apiKey="eVAEQFPaKsqUie40OhtK"
+      // config={{
+      //   // userIdAllowList: ['abcd'], // To allow specific users only
+      //   urlAllowList: [], // To allow velt in specific screens only
+      //   version: "2.0.1", //Staging
+      //   // version: '2.0.6', //Dev
+      //   staging: true,
+      //   // version: 'latest',
+      //   // develop: true,
+      // }}
+    >
       <VeltCommentsSidebar pageMode={true} />
       <VeltComments />
       <YourAuthComponent />
